@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.cadastro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f919;
+    padding: 32px 40px;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(124, 5, 5, 0.798);
+}
+
+.cadastro-container h2 {
+    margin-bottom: 24px;
+}
+
+.cadastro-container p {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cadastro-container input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 180px;
+}
+
+.cadastro-container button {
+    margin-top: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    transition: background-color 0.3s ease;
+    width: 200px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#btnConsultar {
+    background-color: #2557ed;
+}
+
+#btnCadastrar {
+    background-color: #2557ed; 
+}
+
+#btnAlterar {
+    background-color: #2557ed; 
+}
+
+#btnExcluir {
+    background-color: #2557ed; 
+}
+
+.cadastro-botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.cadastro-botoes button {
+    background-color: #2557ed; 
+    margin-top: 0;
+    width: 150px;
+}

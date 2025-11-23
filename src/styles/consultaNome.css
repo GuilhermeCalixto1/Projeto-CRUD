@@ -1,0 +1,82 @@
+/* styles/consultaNome.css */
+
+body, html {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.tabela-fornecedor-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    min-height: 60vh;
+    margin-top: 32px;
+}
+
+.tabela-fornecedor {
+    table-layout: fixed;
+    width: 85vw;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+.tabela-fornecedor th, .tabela-fornecedor td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tabela-fornecedor th {
+    background: #1976d2;
+    color: #fff;
+    font-weight: 600;
+}
+
+.tabela-fornecedor tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+.tabela-fornecedor tr:hover {
+    background: #e3f2fd;
+    transition: background 0.2s;
+}
+
+.consulta-nome-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.consulta-nome-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.consulta-nome-header input[type="text"] {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    min-width: 220px;
+}
+
+@media (max-width: 800px) {
+    .tabela-fornecedor {
+        width: 98vw;
+        font-size: 14px;
+    }
+    .tabela-fornecedor th, .tabela-fornecedor td {
+        padding: 8px 4px;
+    }
+}
