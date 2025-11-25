@@ -17,15 +17,19 @@ btnConsultar.onclick = async ()=>{
 
 
 btnCadastrar.onclick = ()=>{
-     window.location.href = './src/pages/cadastrar.html';
+     window.location.href = '/src/pages/cadastrar.html';
 };
 
 btnAlterar.onclick = ()=>{
-    window.location.href = './src/pages/alterar.html';
+    window.location.href = '/src/pages/alterar.html';
+};
+
+btnExcluir.onclick = ()=>{
+    window.location.href = '/src/pages/excluir.html';
 };
 
 
 
 btnConsultar.onclick = () => {
-    window.location.href= './src/pages/consultar.html';
+    window.location.href= '/src/pages/consultar.html';
 }

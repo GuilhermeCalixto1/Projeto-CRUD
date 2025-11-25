@@ -36,8 +36,16 @@ function getDados(){
 
 
 async function createFor(dados){
-    const response = await api.post('/fornecedor',dados);
+    try {const response = await api.post('/fornecedor',dados);
     console.log(response);
+    alert('Cadastro Realizado');
+    }
+
+    catch (error){
+        console.error(error);
+        alert('Error');
+
+    }
 }
 
 
@@ -45,3 +53,17 @@ btnCadastrar.onclick = ()=>{
     const dados = getDados();
     createFor(dados);
 } 
+
+btnVoltar.onclick = ()=>{
+     window.location.href = './src/pages/index.html';
+};
+
+btnLimpar.onclick = ()=>{
+     inpNome.value = '';
+     inpEmail.value = '';
+     inpUf.value = '';
+     inpPassword.value = '';
+     inpLevel.value = '';
+     inpCod.value = '';
+    
+};

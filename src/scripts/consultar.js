@@ -12,6 +12,9 @@ function renderTableFornecedores(fornecedores){
     if(!Array.isArray(fornecedores)|| fornecedores?.length === 0 ){
         resultadoConsultaNome.innerHTML = `<h3>Nenhum registro encontrado</h3>`;
     }else{
+        fornecedores.sort((a, b) => {
+            return a.codfor - b.codfor;
+        });
         resultadoConsultaNome.innerHTML = `
                                           <div class="tabela-fornecedor-container">
                                             <table class="tabela-fornecedor">

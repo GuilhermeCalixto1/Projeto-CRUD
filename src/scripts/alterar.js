@@ -33,13 +33,35 @@ function getDados(){
 
 
 async function updateFor(){
-    const codfor = inpCod.value;
+    try { const codfor = inpCod.value;
     const data = getDados();
     const response = await api.put(`/fornecedor/${codfor}`, data);
     console.log(response);
+
+        alert(`Alteração Realizada`)
+}
+
+    catch(error){
+          console.error(error);
+        alert('Error');
+    }
 }
 
 
 btnAlterar.onclick = ()=>{
     updateFor();
+};
+
+btnLimpar.onclick = ()=>{
+     inpNome.value = '';
+     inpEmail.value = '';
+     inpUf.value = '';
+     inpPassword.value = '';
+     inpLevel.value = '';
+     inpCod.value = '';
+    
+};
+
+btnVoltar.onclick = ()=>{
+     window.location.href = './src/pages/index.html';
 };
