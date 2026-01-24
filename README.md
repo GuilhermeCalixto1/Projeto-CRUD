@@ -83,7 +83,7 @@ $ npm install
 # 4. Inicie o servidor de desenvolvimento
 $ npm run frontend
 ```
-##👨‍💻 Autor
+## 👨‍💻 Autor
 <div align="center">
 
 <img style="border-radius: 50%;" src="https://wsrv.nl/?url=github.com/GuilhermeCalixto1.png&w=400&h=400&mask=circle" width="200em" alt="Foto de Perfil"/>
