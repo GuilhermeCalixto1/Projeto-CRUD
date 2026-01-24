@@ -13,14 +13,6 @@
   <b>Uma solução SPA (Single Page Application) moderna para gerenciamento corporativo de parceiros e fornecedores.</b>
 </p>
 
-<p align="center">
-  <a href="#-sobre">Sobre</a> •
-  <a href="#-tecnologias">Tecnologias</a> •
-  <a href="#-funcionalidades">Funcionalidades</a> •
-  <a href="#-instalação">Instalação</a> •
-  <a href="#-autor">Autor</a>
-</p>
-
 <br>
 
 ## 📸 Preview do Projeto
@@ -83,10 +75,25 @@ Quer ver funcionando na sua máquina? Siga o passo a passo:
 $ git clone https://github.com/GuilhermeCalixto1/Projeto-CRUD.git
 
 # 2. Acesse a pasta do projeto
-$ cd controle-fornecedores
+$ cd Projeto-CRUD
 
 # 3. Instale as dependências (Node.js e Vite necessário)
 $ npm install
 
 # 4. Inicie o servidor de desenvolvimento
 $ npm run frontend
+```
+👨‍💻 Autor
+<div align="center">
+
+<img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/v2/D4D03AQEwCHpFX4fzSw/profile-displayphoto-scale_400_400/B4DZvxU309H0Ag-/0/1769280340417?e=1770854400&v=beta&t=_dTDlenrJS72cDJ3ci7XLrrNKDpmrYHo-8smVC1atDs" width="200em;" alt="Foto de Perfil"/>
+
+<br>
+
+<h3>Guilherme Calixto</h3> <p>Estudante de Engenharia de Software</p>
+
+<a href="www.linkedin.com/in/guilherme-calixto-544b8a1b6">
+<img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/xbu/linkedin-revised-brand-guidelines/linkedin-logo/fg/brandg-linkedinlogo-hero-logo-dsk-v01.png/jcr:content/renditions/brandg-linkedinlogo-hero-logo-dsk-v01-2x.png" width="180em" />
+</a>
+
+</div>
