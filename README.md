@@ -86,7 +86,7 @@ $ npm run frontend
 👨‍💻 Autor
 <div align="center">
 
-<img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/v2/D4D03AQEwCHpFX4fzSw/profile-displayphoto-scale_400_400/B4DZvxU309H0Ag-/0/1769280340417?e=1770854400&v=beta&t=_dTDlenrJS72cDJ3ci7XLrrNKDpmrYHo-8smVC1atDs" width="200em;" alt="Foto de Perfil"/>
+<img style="border-radius: 50%;" src="https://wsrv.nl/?url=github.com/GuilhermeCalixto1.png&w=400&h=400&mask=circle" width="200em" alt="Foto de Perfil"/>
 
 <br>
 
