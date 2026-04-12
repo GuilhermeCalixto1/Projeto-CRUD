@@ -1,21 +1,21 @@
 import api from "../services/api.js";
 
 // Referências do DOM - HTML
-const btnVoltar = document.getElementById('btnVoltar');
-const nomeFornecedor = document.getElementById('nomeFornecedor');
-const resultadoConsultaNome = document.getElementById('resultadoConsultaNome');
+const btnVoltar = document.getElementById("btnVoltar");
+const nomeFornecedor = document.getElementById("nomeFornecedor");
+const resultadoConsultaNome = document.getElementById("resultadoConsultaNome");
 
 // Lógica de Programação')
 
-function renderTableFornecedores(fornecedores){
-    console.log('Construindo a tabela....');
-    if(!Array.isArray(fornecedores)|| fornecedores?.length === 0 ){
-        resultadoConsultaNome.innerHTML = `<h3>Nenhum registro encontrado</h3>`;
-    }else{
-        fornecedores.sort((a, b) => {
-            return a.codfor - b.codfor;
-        });
-        resultadoConsultaNome.innerHTML = `
+function renderTableFornecedores(fornecedores) {
+  console.log("Construindo a tabela....");
+  if (!Array.isArray(fornecedores) || fornecedores?.length === 0) {
+    resultadoConsultaNome.innerHTML = `<h3>Nenhum registro encontrado</h3>`;
+  } else {
+    fornecedores.sort((a, b) => {
+      return a.codfor - b.codfor;
+    });
+    resultadoConsultaNome.innerHTML = `
                                           <div class="tabela-fornecedor-container">
                                             <table class="tabela-fornecedor">
                                               <thead>
@@ -26,8 +26,9 @@ function renderTableFornecedores(fornecedores){
                                                     <th>Level</th>
                                               </thead>
                                               <tbody>
-                                                    ${fornecedores.map(f =>{
-                                                        return`
+                                                    ${fornecedores
+                                                      .map((f) => {
+                                                        return `
                                                               <tr>
                                                                   <td>${f.codfor}</td>
                                                                   <td>${f.nome} </td>
@@ -35,40 +36,39 @@ function renderTableFornecedores(fornecedores){
                                                                   <td>${f.uf}</td>
                                                                   <td>${f.level} </td>
                                                               </tr>
-                                                            `
-                                                    }).join('')}
+                                                            `;
+                                                      })
+                                                      .join("")}
                                               </tbody>
                                             </table>  
                                           </div>
-                                          `
-    }
+                                          `;
+  }
+}
+
+function renderLoading() {
+  resultadoConsultaNome.innerHTML = `<h3>Buscando no banco de dados...</h3>`;
+}
+
+nomeFornecedor.oninput = async () => {
+  console.log("Executando a consulta no banco de dados....");
+  const nome = nomeFornecedor.value;
+  renderLoading();
+  if (!nome) {
+    const response = await api.get("/fornecedornome");
+    let fornecedores = response.data;
+    console.log(fornecedores);
+    console.log("Carregando todos os registros....");
+    renderTableFornecedores(fornecedores);
+  } else {
+    const response = await api.get(`/fornecedorByNome/${nome}`);
+    let fornecedores = response.data;
+    console.log(fornecedores);
+    console.log("Carregando todos os registros....");
+    renderTableFornecedores(fornecedores);
+  }
 };
 
-
-
-nomeFornecedor.oninput = async ()=>{
-    console.log('Executando a consulta no banco de dados....');
-    const nome = nomeFornecedor.value;
-    if(!nome){
-        const response = await api.get('/fornecedornome');
-        let fornecedores = response.data; 
-        console.log(fornecedores);
-        console.log('Carregando todos os registros....');
-        renderTableFornecedores(fornecedores);
-    }else{
-        const response = await api.get(`/fornecedorByNome/${nome}`);
-         let fornecedores = response.data; 
-        console.log(fornecedores);
-        console.log('Carregando todos os registros....');
-        renderTableFornecedores(fornecedores);
-
-    }
-    
-}; 
-
-
-
-btnVoltar.onclick = ()=>{
-    window.location.href = '/index.html';
-
+btnVoltar.onclick = () => {
+  window.location.href = "/index.html";
 };
