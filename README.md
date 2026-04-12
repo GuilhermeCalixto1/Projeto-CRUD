@@ -4,9 +4,9 @@
 
 <div align="center">
 
-  [![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge&logo=checkbox)](https://github.com/GuilhermeCalixto1)
-  [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=github)](https://github.com/GuilhermeCalixto1)
-  
+[![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge&logo=checkbox)](https://github.com/GuilhermeCalixto1)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=github)](https://github.com/GuilhermeCalixto1)
+
 </div>
 
 <p align="center">
@@ -18,15 +18,15 @@
 ## 📸 Preview do Projeto
 
 <div align="center">
-  <img src="./src/img/Captura de tela 2026-01-24 190833.png" alt="Demonstração do Projeto" width="100%" style="border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
-  <img src="./src/img/Captura de tela 2026-01-24 191148.png" alt="Demonstração do Projeto" width="100%" style="border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
+  <img src="./src/img/crud.png" alt="Demonstração do Projeto" width="100%" style="border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
+  <img src="./src/img/crud2.png" alt="Demonstração do Projeto" width="100%" style="border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
 </div>
 
 <br>
 
 ## 🔖 Sobre
 
-O **Controle de Fornecedores** é uma aplicação Fullstack (Front-end desacoplado) desenvolvida para resolver a necessidade de cadastro e gestão rápida de parceiros comerciais. 
+O **Controle de Fornecedores** é uma aplicação Fullstack (Front-end desacoplado) desenvolvida para resolver a necessidade de cadastro e gestão rápida de parceiros comerciais.
 
 Diferente de projetos estáticos, este sistema consome uma **API REST Real** hospedada na nuvem, garantindo que os dados sejam persistidos e seguros. O foco do desenvolvimento foi a performance (usando Vite) e a organização de código (Padrão de Camadas).
 
@@ -51,15 +51,17 @@ O projeto foi desenvolvido com o que há de mais moderno no ecossistema JavaScri
 ## ⚙️ Funcionalidades
 
 ### 🔐 CRUD Completo
+
 O sistema cobre todo o ciclo de vida da informação:
 
 - [x] **🟢 Create:** Cadastro validado de novos fornecedores (Nome, Email, UF, Nível).
 - [x] **🔵 Read:** - Listagem inteligente com tabela dinâmica.
-    - Pesquisa filtrada por **Nome** ou **Código**.
+  - Pesquisa filtrada por **Nome** ou **Código**.
 - [x] **🟠 Update:** Edição rápida de dados cadastrais.
 - [x] **🔴 Delete:** Remoção segura de registros obsoletos.
 
 ### ✨ Diferenciais Técnicos
+
 - **Consumo de API:** Tratamento de promessas com `Async/Await`.
 - **Tratamento de Erros:** Blocos `try/catch` para capturar falhas de rede.
 - **Performance:** Build otimizado pelo Vite.
@@ -83,7 +85,9 @@ $ npm install
 # 4. Inicie o servidor de desenvolvimento
 $ npm run frontend
 ```
+
 ## 👨‍💻 Autor
+
 <div align="center">
 
 <img style="border-radius: 50%;" src="https://wsrv.nl/?url=github.com/GuilhermeCalixto1.png&w=400&h=400&mask=circle" width="200em" alt="Foto de Perfil"/>
