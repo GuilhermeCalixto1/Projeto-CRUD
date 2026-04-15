@@ -70,5 +70,5 @@ nomeFornecedor.oninput = async () => {
 };
 
 btnVoltar.onclick = () => {
-  window.location.href = "/index.html";
+  window.location.href = `${import.meta.env.BASE_URL}index.html`;
 };

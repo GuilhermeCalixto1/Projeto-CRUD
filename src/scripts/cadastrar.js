@@ -55,7 +55,7 @@ btnCadastrar.onclick = ()=>{
 } 
 
 btnVoltar.onclick = ()=>{
-     window.location.href = './src/pages/index.html';
+    window.location.href = `${import.meta.env.BASE_URL}index.html`;
 };
 
 btnLimpar.onclick = ()=>{

@@ -1,4 +1,4 @@
-import api  from "../services/api";
+import api from "../services/api.js";
 
 // referências do DOM HTML
 
@@ -10,6 +10,8 @@ const inpPassword = document.getElementById('inpPassword');
 const inpLevel = document.getElementById('inpLevel');
 
 const btnAlterar = document.getElementById('btnAlterar');
+const btnLimpar = document.getElementById('btnLimpar');
+const btnVoltar = document.getElementById('btnVoltar');
 
 //lógica de Programação
 
@@ -63,5 +65,5 @@ btnLimpar.onclick = ()=>{
 };
 
 btnVoltar.onclick = ()=>{
-     window.location.href = './src/pages/index.html';
+    window.location.href = `${import.meta.env.BASE_URL}index.html`;
 };

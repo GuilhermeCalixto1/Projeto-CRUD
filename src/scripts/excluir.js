@@ -3,6 +3,7 @@ import api from '../services/api.js';
 
 const inpCodigo = document.getElementById('inpCodigo');
 const btnExcluir = document.getElementById("btnExcluir");
+const btnVoltar = document.getElementById("btnVoltar");
 
 //Logica
 
@@ -17,5 +18,5 @@ btnExcluir.onclick = ()=>{
 }
 
 btnVoltar.onclick = ()=>{
-     window.location.href = '/src/pages/index.html';
+    window.location.href = `${import.meta.env.BASE_URL}index.html`;
 };
